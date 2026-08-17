@@ -1,0 +1,20 @@
+# dsh-desktop-notify bundle patch: 把通知插件插入 web profile 的插件名单。
+#
+# 挂载方式（在 profile 目录执行，或直接用 dsh plugin）：
+#   dsh plugin --profile web add link:/Users/ruinow/DSH/dsh-desktop-notify
+#
+# 可选配置（不写则用默认值）：
+#   - insert:
+#       - id: desktop-notify
+#         name: 'dsh-desktop-notify'
+#         config:
+#           onStart: false      # 开始执行时通知
+#           onComplete: true    # 执行完成时通知
+#           onError: true       # 执行失败时通知
+#           onInterrupt: true   # 执行中断时通知
+#           onAsk: true         # 需要用户批准时通知
+#           sound: false        # 是否带系统提示音
+#           cooldownMs: 3000    # 同一会话同一类事件的最小通知间隔（防抖）
+- insert:
+    - id: desktop-notify
+      name: 'dsh-desktop-notify'
