@@ -1,6 +1,6 @@
 {
   "name": "dsh-desktop-notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH 桌面通知：agent 执行完成 / 失败 / 中断 / 需要批准时，发送 macOS 原生桌面通知，无需一直盯着 Web GUI。",
   "type": "module",
   "engines": {
