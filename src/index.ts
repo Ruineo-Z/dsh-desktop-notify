@@ -31,6 +31,8 @@ declare module '@deepseek-ai/cordis' {
 }
 
 export const name = 'desktop-notify'
+/** Host service required to register the settings and test routes. */
+export const inject = ['webServer']
 
 /** Static event switches (plugin config, patch layer). */
 const DEFAULT_SWITCHES = {

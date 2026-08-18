@@ -37,4 +37,6 @@ declare module '@deepseek-ai/cordis' {
     }
 }
 export declare const name = "desktop-notify";
+/** Host service required to register the settings and test routes. */
+export declare const inject: string[];
 export declare function apply(ctx: Context, rawConfig?: Record<string, unknown>): void;
